@@ -57,5 +57,16 @@ class Main
         Sphere sphere = new Sphere(sphereRadius);
         System.out.println("Sphere Volume: " + sphere.calculateVolume());
         System.out.println("Sphere Surface Area: " + sphere.calculateSurfaceArea());
+		
+		System.out.print("Enter the radius of the cylinder: ");
+        double cylinderRadius = scanner.nextDouble();
+        System.out.print("Enter the height of the cylinder: ");
+        double cylinderHeight = scanner.nextDouble();
+		
+        Cylinder cylinder = new Cylinder(cylinderRadius, cylinderHeight);
+        System.out.println("Cylinder Volume: " + cylinder.calculateVolume());
+        System.out.println("Cylinder Lateral Surface Area: " + cylinder.calculateLateralSurfaceArea());
+        System.out.println("Cylinder Surface Area: " + cylinder.calculateSurfaceArea());
+
 	}
 }
