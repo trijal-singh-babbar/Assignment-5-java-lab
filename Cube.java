@@ -13,7 +13,7 @@ class Cube extends Shape
 	
 	public double calculatePerimeter()
 	{
-		return 12 * side;
+		return 12 * dim_one;
 	}
 	
 	public double calculateSurfaceArea();
@@ -23,6 +23,6 @@ class Cube extends Shape
 	
 	public double calculateVolume();
 	{
-		return side*side*side;
+		return dim_one*dim_one*dim_one;
 	}
 }
