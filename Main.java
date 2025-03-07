@@ -36,5 +36,19 @@ class Main
 		System.out.println("Perimeter of the cube is: "+cube.calculatePerimeter());
 		System.out.println("Surface area of the cube is: "+cube.calculateSurfaceArea());
 		System.out.println("Volume of the cube is : "+cube.calculateVolume());
+		
+		
+		System.out.println("Enter base of pyramid: ");
+		double b = Double.parseDouble(sc.nextLine());
+		System.out.println("Enter height of pyramid: ");
+		double h = Double.parseDouble(sc.nextLine());
+		
+		Shape pyramid = new Pyramid(b,h);
+		System.out.println("Slant height of the pyramid is : "+pyramid.calculateSlantHeight());
+		System.out.println("Area of the pyramid is : "+pyramid.calculateArea());
+		System.out.println("Volume of the pyramid is : "+pyramid.calculateVolume());
+		System.out.println("Base perimeter of the pyramid is: "+pyramid.calculateBasePerimeter());
+		System.out.println("Total perimeter of the cube is : "+pyramid.calculateTotalPerimeter());
+		System.out.println("Surface area of the pyramid is: "+pyramid.calculateSurfaceArea());
 	}
 }
