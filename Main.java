@@ -52,16 +52,16 @@ class Main
 		System.out.println("Surface area of the pyramid is: "+pyramid.calculateSurfaceArea());
 		
 		System.out.print("Enter the radius of the sphere: ");
-        double sphereRadius = scanner.nextDouble();
+        double sphereRadius = sc.nextDouble();
 		
         Sphere sphere = new Sphere(sphereRadius);
         System.out.println("Sphere Volume: " + sphere.calculateVolume());
         System.out.println("Sphere Surface Area: " + sphere.calculateSurfaceArea());
 		
 		System.out.print("Enter the radius of the cylinder: ");
-        double cylinderRadius = scanner.nextDouble();
+        double cylinderRadius = sc.nextDouble();
         System.out.print("Enter the height of the cylinder: ");
-        double cylinderHeight = scanner.nextDouble();
+        double cylinderHeight = sc.nextDouble();
 		
         Cylinder cylinder = new Cylinder(cylinderRadius, cylinderHeight);
         System.out.println("Cylinder Volume: " + cylinder.calculateVolume());
