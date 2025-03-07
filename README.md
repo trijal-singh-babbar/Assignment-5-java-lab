@@ -109,7 +109,7 @@ Contains the main method and user interaction menu.
 ## How to Run
 1. Compile all Java files:
    ```sh
-   javac *.java
+   javac Main.java
    ```
 2. Run the `Main` class:
    ```sh
