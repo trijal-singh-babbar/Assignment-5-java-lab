@@ -28,5 +28,13 @@ class Main
 		System.out.println("Area of rectangle is : "+rectangle.calculateArea());
 		System.out.println("Perimeter of rectangle is : "+rectangle.calculatePerimeter());
 		
+		System.out.println("Enter side of a cube: ");
+		double side = Double.parseDouble(sc.nextLine());
+		
+		Shape cube = new Cube(side);
+		System.out.println("Area of the cube is : "+cube.calculateArea());
+		System.out.println("Perimeter of the cube is: "+cube.calculatePerimeter());
+		System.out.println("Surface area of the cube is: "+cube.calculateSurfaceArea());
+		System.out.println("Volume of the cube is : "+cube.calculateVolume());
 	}
 }
