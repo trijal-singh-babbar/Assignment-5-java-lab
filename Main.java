@@ -50,5 +50,12 @@ class Main
 		System.out.println("Base perimeter of the pyramid is: "+pyramid.calculateBasePerimeter());
 		System.out.println("Total perimeter of the cube is : "+pyramid.calculateTotalPerimeter());
 		System.out.println("Surface area of the pyramid is: "+pyramid.calculateSurfaceArea());
+		
+		System.out.print("Enter the radius of the sphere: ");
+        double sphereRadius = scanner.nextDouble();
+		
+        Sphere sphere = new Sphere(sphereRadius);
+        System.out.println("Sphere Volume: " + sphere.calculateVolume());
+        System.out.println("Sphere Surface Area: " + sphere.calculateSurfaceArea());
 	}
 }
