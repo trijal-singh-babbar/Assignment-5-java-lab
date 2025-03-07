@@ -1,25 +1,23 @@
-class Cylinder extends Shape
+import java.lang.*;
+class Cylinder extends Shape implements Volume
 {
-    public Cylinder(double radius, double height)
-    {
-        super(radius, height, 0, 3); // A cylinder has 3 faces (2 circular bases + 1 curved surface)
-    }
-
-    // Method to calculate volume
-    public double calculateVolume()
-    {
-        return Math.PI * dim_one * dim_one * dim_two;
-    }
-
-    // Method to calculate lateral surface area
-    public double calculateLateralSurfaceArea()
-    {
-        return 2 * Math.PI * dim_one * dim_two;
-    }
-
-    // Method to calculate total surface area
-    public double calculateSurfaceArea()
-    {
-        return 2 * Math.PI * dim_one * (dim_one + dim_two);
-    }
+	public Cylinder(double radius,double height)
+	{
+		super(radius,height,0,0);	
+	}
+	
+	public double calculateArea()
+	{
+		return (2 * 3.14 * dim_one) * (dim_one + dim_two);
+	}
+	
+	public double calculatePerimeter()
+	{ 
+		return 2 * ((2 * dim_one) + dim_two);
+	}
+	
+	public double calculateVolume()
+	{
+		return 3.14 * (dim_one * dim_one) * dim_two;
+	}
 }

@@ -1,10 +1,11 @@
 // Triangle.java
 
+import java.lang.*;
 class Triangle extends Shape
 {
-	public Triangle(double base, double height)
+	public Triangle(double base,double height)
 	{
-		super(base,height,0,3);
+		super(base, height,0,3);	
 	}
 	
 	public double calculateArea()
@@ -16,4 +17,5 @@ class Triangle extends Shape
 	{
 		return (dim_one + dim_two) + Math.sqrt((dim_one * dim_one) + (dim_two * dim_two));
 	}
+
 }

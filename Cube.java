@@ -1,14 +1,16 @@
 // Cube.java
 
-class Cube extends Shape
+import java.lang.*;
+class Cube extends Shape implements Volume
 {
 	public Cube(double side)
 	{
-		super(side, side, side, 6);
+		super(side,0,0,6);	
 	}
+	
 	public double calculateArea()
 	{
-		return dim_one * dim_one * dim_one;
+		return 6 * dim_one * dim_one;
 	}
 	
 	public double calculatePerimeter()
@@ -16,13 +18,8 @@ class Cube extends Shape
 		return 12 * dim_one;
 	}
 	
-	public double calculateSurfaceArea();
+	public double calculateVolume()
 	{
-		return 6 * dim_one * dim_one;
-	}
-	
-	public double calculateVolume();
-	{
-		return dim_one*dim_one*dim_one;
+		return dim_one * dim_one * dim_one;
 	}
 }
