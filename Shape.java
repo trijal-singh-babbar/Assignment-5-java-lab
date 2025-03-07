@@ -24,6 +24,11 @@ abstract class Shape
 	
 	abstract public double calculateArea();
 	abstract public double calculatePerimeter();
+	abstract public double calculateVolume();
+	abstract public double calculateSurfaceArea();
+	abstract public calculateSlantHeight();
+	abstract public calculateBasePerimeter();
+	abstract public calculateTotalPerimeter();
 	//abstract methods
 	
 	public int getNumSides()
